@@ -1,3 +1,5 @@
+To demonstrate that I have the "Hard-Check Trader DNA" and deep systems-level knowledge required for this role, I have outlined below my architectural approach to solving the exact technical challenges Zignaly is currently tackling:
+
 1. Gas Micro-Optimizations (O(1) Scaling)
 When deploying individual trade vaults for thousands of followers, standard factory contracts consume excessive gas.
 EIP-1167 Minimal Proxies: I bypass Solidity's compiler overhead by writing customized creation and runtime bytecodes in inline Yul/Huff to deploy deterministic minimal proxies via CREATE2. This reduces the deployment footprint to exactly 55\text{ bytes} and cuts gas costs down to \approx 55,000 units.
